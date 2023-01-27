@@ -24,7 +24,13 @@ public class Comparators {
      * @return true if a is equal to b, false otherwise.
      */
     public boolean isEqual(int a, int b){
-        return false;
+
+        boolean result = false; 
+        if(a == b){
+            result = true;
+        }
+        
+        return result;
     }
 
     /**
@@ -33,15 +39,24 @@ public class Comparators {
      * @return true if a is greater than b, false otherwise.
      */
     public boolean greaterThan(int a, int b){
-        return false;
-    }
+        boolean result1 = false; 
+                if(a > b){
+                    result1 = true;
+                }
+                
+                return result1;    }
     /**
      * @param a the first number to be compared.
      * @param b the second number to be compared.
      * @return true if a is less than b, false otherwise.
      */
     public boolean lessThan(int a, int b){
-        return false;
+         boolean result2 = false; 
+        if(a < b){
+            result2 = true;
+        }
+        
+        return result2;
     }
     /**
      * @param a the first number to be compared.
@@ -49,7 +64,12 @@ public class Comparators {
      * @return true if a is greater than or equal to b, false otherwise.
      */
     public boolean greaterThanOrEqualTo(int a, int b){
-        return false;
+         boolean result3 = false; 
+        if(a >= b){
+            result3 = true;
+        }
+        
+        return result3;
     }
     /**
      * @param a the first number to be compared.
@@ -57,7 +77,12 @@ public class Comparators {
      * @return true if a is less than or equal to b, false otherwise.
      */
     public boolean lessThanOrEqualTo(int a, int b){
-        return false;
+         boolean result4 = false; 
+        if(a <= b){
+            result4 = true;
+        }
+        
+        return result4;
     }
 
     /**
@@ -66,6 +91,11 @@ public class Comparators {
      * @return true if a is not equal to b, false otherwise.
      */
     public boolean notEqualTo(int a, int b){
-        return false;
+         boolean result5 = false; 
+        if(a != b){
+            result5 = true;
+        }
+        
+        return result5;
     }
 }
